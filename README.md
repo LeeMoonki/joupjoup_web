@@ -1,5 +1,12 @@
 # joupjoup_web
 
+## Front-End using Vue.js
+
+* vue : v2.5
+* init with Vue-cli 3
+* This project is using babel, router, TDD with Jest, CSS Preprocessor(Sass/SCSS)
+
+
 ## Project setup
 ```
 npm install
