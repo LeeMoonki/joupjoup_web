@@ -1,0 +1,12 @@
+#container {
+    position:relative;
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    max-width:1440px;
+    max-height:1024px;
+}
+
+/* fonts */
+.font__roboto { font-family:Roboto; }
+.font__sans { font-family: 'Noto Sans KR'; }
