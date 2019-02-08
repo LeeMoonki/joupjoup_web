@@ -2,7 +2,7 @@
     position:relative;
     margin:0 auto;
     width:100%;
-    height:100%;
+    height:100vh;
     max-width:1440px;
     max-height:1024px;
 }
@@ -10,3 +10,15 @@
 /* fonts */
 .font__roboto { font-family:Roboto; }
 .font__sans { font-family: 'Noto Sans KR'; }
+
+/* buttons */
+
+/* text color */
+.txt-white--bold { color:#fff;font-weight:700; }
+.txt-white { color:#fff;font-weight:400; }
+.txt-orange--bold { color:#ffa200;font-weight:500; }
+.txt-gray { color:#c2c2c4;font-weight:400; }
+
+/* list */
+.list-nav { position:relative;cursor:pointer; }
+.list-nav > .list-title { margin-left:40px; }

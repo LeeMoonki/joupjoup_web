@@ -2,6 +2,7 @@
 
 ## Front-End using Vue.js
 
+The following list can be checked at `/node_modules/@vue/cli-service/package.json`
 * vue : v2.5
 * init with Vue-cli 3
 * This project is using babel, router, TDD with Jest, CSS Preprocessor(Sass/SCSS)

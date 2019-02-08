@@ -1,20 +1,56 @@
 <template>
 <div>
     <div id="container">
-        <div class="layout-sn__bg">
-            <img src="../../assets/imgs/joup-logo.svg"
-                 class="layout-sn__logo">
-            <div class="layout-sn__tit-wrapper">
-                <div class="layout-sn__title font__roboto">
-                    <slot name="title"></slot>
-                </div>
-                <div class="layout-sn__subtitle font__sans">
-                    <slot name="subtitle"></slot>
-                </div>
+        <div id="sidenav" class="font__sans">
+            <img src="../../assets/imgs/joup-logo.svg" class="layout-sn__logo">
+            <div class="layout-sn__nav-wrapper">
+                <ul>
+                    <li class="list-nav">
+                        <div class="list-title txt-white--bold">화면별</div>
+                        <ul class="layout-sn__sub-nav">
+                            <li class="list-nav">
+                                <div class="list-title txt-orange--bold">전체</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">로그인</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">회원가입</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">검색</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">빈화면</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">햄버거 메뉴</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">메인</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">상품상세</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">장바구니</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">음성인식</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">마이페이지</div>
+                            </li>
+                            <li class="list-nav">
+                                <div class="list-title txt-gray">주문서</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="layout-sn__content">
-                <slot name="content"></slot>
-            </div>
+        </div>
+        <div class="layout-sn__content">
+            <slot name="content"></slot>
         </div>
     </div>
 </div>
@@ -27,48 +63,34 @@ export default {
 </script>
 
 <style>
-.layout-sn__content {
-    position:absolute;
-    top:0;
-    right:0;
-    width:732px;
-    height:100%;
-    border-radius:10px 0 0 10px;
-    background-color:#fff; 
-}
-.layout-sn__bg {
-    position:relative;
-    overflow:hidden;
-    flex-direction:row-reverse;
-    width:100%;
-    height:1024px;
-    background-image:url('../../assets/imgs/back.png'); 
-}
-.layout-sn__logo {
-    position:absolute;
-    top:200px;
-    left:80px;
-    width:140px;
-    height:139px;
-    object-fit:contain;
-}
-.layout-sn__tit-wrapper {
-    position:absolute;
-    top:402px;
-    left:80px;
-}
-.layout-sn__title {
-    max-width:548px;
-    font-size:60px;
-    font-weight:900;
-    letter-spacing:14px;
-    color:#fff;
-}
-.layout-sn__subtitle {
-    margin-top:20px;
-    font-size:20px;
-    letter-spacing:2px;
-    line-height:1.4;
-    color:#fff;
-}
+    #sidenav {
+        position:fixed;
+        overflow-y:scroll;
+        left:0;
+        top:0;
+        bottom:0;
+        width:280px;
+        background-color:#101010;
+    }
+    .layout-sn__logo {
+        position:absolute;
+        top:40px;
+        left:40px;
+        width:120px;
+        height:119px;
+    }
+    .layout-sn__nav-wrapper {
+        position:absolute;
+        top:218px;
+        left:0;
+    }
+    .layout-sn__sub-nav {
+        margin-top:25px;
+    }
+    .layout-sn__sub-nav > li:nth-child(n+2) {
+        margin-top:20px;
+    }
+    .layout-sn__content {
+        margin-left:280px;
+    }
 </style>
