@@ -3,7 +3,7 @@
         <div slot="title">Hello World</div>
         <div slot="subtitle">Hi</div>
         <div slot="content">
-            Im conten
+            Im content
         </div>
     </Layout>
 </template>
