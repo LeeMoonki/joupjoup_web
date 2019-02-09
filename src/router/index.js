@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
+import Register from '../components/Register.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     { path: '/', name: 'home', component: Home, beforeEnter: checkAuth },
-    { path: '/login', name: 'login', component: Login }
+    { path: '/login', name: 'login', component: Login },
+    { path: '/reg', name: 'reg', component: Register }
   ]
 })
